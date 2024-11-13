@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horrortoday</title>
+  <link rel="stylesheet" href="style.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+</head>
+<body>
+  <nav class="menu">
+    <div class="logo">
+      <img width="190" height="80" src="immg/Horror.png" alt="">
+    </div>
+   
+    <div class="Describe1">
+      <h6>Wanna watch something scarry?</h6>
+    </div>
+  </nav>
+ 
+  <nav class="mmm">
+    <div class="greet">
+      <h1>Welcome to the website</h1>
+    </div>
+    <br>
+    <div class="mdes">
+      <p>
+        This is the web where you can find interesting HORROR movie by random it!
+      </p>
+    </div>
+  </nav>
+  
+  <div class="con">
+    <div class="m1">
+      <div class="explain">
+        <p>นี่คือเว็บสุ่มหนังที่จะทำให้คนชื่นชอบความสยองของหนังผีค้นพบเรื่องใหม่ๆ ได้ง่ายดาย แค่กำหนดจำนวนหนังที่ต้องการ ระบบจะสุ่มรายการมาให้ทันที พร้อมรูปภาพและชื่อเรื่อง ช่วยเพิ่มความสะดวกและสร้างความตื่นเต้นในการดูหนังโดยไม่ต้องเสียเวลาค้นหา</p>
+    <br>
+      <p>A movie randomizer website offers movie lovers an easy way to discover new films. Simply select the number of movies, and it provides instant random picks with images and titles, adding convenience and excitement without the hassle of searching.</p>
+      </div>
+    </div>
+    <div class="m2">
+      <div class="pic1">
+        <img width="800" height="500"src="immg/dark-scary-khqdl3wmd1ro1s8k.jpg" alt="">
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1>สุ่มหนัง</h1>
+  
+  <label for="numMovies">ป้อนจำนวนหนังที่ต้องการสุ่ม:</label>
+  <br>
+  <input type="number" id="numMovies" min="1" max="5" placeholder="กรุณากรอกจำนวน 1-5" class="input-number">
+  
+  <button onclick="generateMovies()" class="button">สุ่มหนัง</button>
+
+  <h2>หนังที่สุ่มได้:</h2>
+  <ul id="movieList" class="movie-list"></ul>
+</div>
+  
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
