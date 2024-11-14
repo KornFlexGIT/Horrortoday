@@ -9,27 +9,30 @@
 }
 
 body {
-  background-image: url('immg/Dark\ Scary\ 4K\ Wallpaper\ Trick.jfif'); /* ใส่ URL ของภาพพื้นหลัง */
-  background-size: cover; /* ปรับขนาดภาพให้เต็มจอ */
-  background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
-  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
-  background-attachment: fixed; /* ทำให้ภาพพื้นหลังอยู่คงที่เมื่อเลื่อนหน้า */
+  background-image: url('immg/Dark\ Scary\ 4K\ Wallpaper\ Trick.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
+
 .menu {
   height: 80px;
   display: flex;
   background-color: black;
   justify-content: space-between;
   align-items: center;
-  
+  width: 100vw;
 }
 
-.mmm {  
+.mmm {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background-color: rgb(49, 49, 49);
-  align-items: center; 
-  padding: 80px; 
+  align-items: center;
+  padding: 80px;
+  width: 100vw;
 }
 
 .Describe1 {
@@ -61,17 +64,12 @@ body {
   align-items: center;
 }
 
-
-
-/* ปรับหัวข้อ */
-
 .container {
   font-family: kanit;
   margin: 20px;
   color: white;
 
 }
-/* ปรับสไตล์ให้กับ input */
 .input-number {
   padding: 10px;
   font-size: 1rem;
@@ -88,7 +86,7 @@ body {
   outline: none;
 }
 
-/* ปรับปุ่ม */
+
 .button {
   background-color: #ff0000;
   color: white;
@@ -104,31 +102,31 @@ body {
   background-color: #690000;
 }
 
-/* สไตล์ของรายการหนัง */
+
 .movie-list {
   list-style-type: none;
   padding: 0;
-  display: flex; /* จัดเรียงเป็นแนวนอน */
-  flex-wrap: wrap; /* จัดให้อยู่ในหลายบรรทัดถ้าพื้นที่ไม่พอ */
-  gap: 15px; /* ระยะห่างระหว่างกล่องหนัง */
-  justify-content: center; /* จัดกึ่งกลาง */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 15px; 
+  justify-content: center; 
   margin: 20px auto;
-  max-width: 100%; /* ขยายความกว้างเต็มหน้าจอ */
+  max-width: 100%; 
 }
 
 
-/* สไตล์ของแต่ละรายการ */
+
 .movie-item {
   display: flex;
-  flex-direction: column; /* ให้เนื้อหาภายในจัดเรียงในแนวตั้ง */
-  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวขวาง */
+  flex-direction: column; 
+  align-items: center; 
   background-color: #ededed;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 150px; /* กำหนดความกว้างของแต่ละกล่อง */
-  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  width: 150px; 
+  text-align: center; 
 }
 
 .movie-item:hover {
@@ -136,21 +134,21 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ปรับขนาดภาพของหนัง */
+
 .movie-item img {
   width: 130px;
   height: 170px;
   border-radius: 10px;
-  margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับชื่อหนัง */
+  margin-bottom: 10px; 
   object-fit: cover;
 }
 
-/* ปรับขนาดฟอนต์ของชื่อหนัง */
+
 .movie-item span {
   font-size: 1rem;
   font-weight: bold;
   color: #3a3a3a;
-  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  text-align: center; 
 }
   
   
@@ -158,27 +156,268 @@ body {
 
 .explain {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: kanit;
   color: #fff;
 }
 
 .con {
   display: flex;
+  justify-content: center; 
+  padding: 0 10px; 
+  box-sizing: border-box;
 }
 
 .m1 {
-  margin: 20px;
-  display: flex;
-  background-color: rgb(115, 115, 115);  
-  width: 700px;
+  margin: 20px auto;
+  background-color: rgb(115, 115, 115);
   border-radius: 10px;
-  padding: 100px;
+  padding: 10px 20px; 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 700px;
+  box-sizing: border-box;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .m2 {
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 10px;
+  max-width: 700px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.m2 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10px; 
+  }
+
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
+
+  .Describe1 {
+    color: #fff;
+    font-size: 15px; 
+    white-space: nowrap; 
+    margin: 5px; 
+  }
+
+  .mmm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    padding: 40px;
+    width: 100vw; 
+  }
+
+  .mdes {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+    text-align: center;
+  }
+
+  .greet{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+  }
+
+  .con {
+    display: block; 
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .m1, .m2 {
+    width: 100%; 
+    padding: 15px; 
+    box-sizing: border-box;
+    
+  }
+
+  .pic1 img {
+    width: 90%; 
+    height: auto; 
+    border-radius: 10px; 
+  }
+
+  .explain {
+    font-size: 12px;
+  }
+  
+
+  
+
+}
+
+@media (max-width: 900px) {
+  .menu {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10px; 
+  }
+
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
+
+  .Describe1 {
+    color: #fff;
+    font-size: 15px; 
+    white-space: nowrap; 
+    margin: 5px; 
+  }
+
+  .mmm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    padding: 40px;
+    width: 100vw; 
+  }
+
+  .mdes {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+    text-align: center;
+  }
+
+  .greet{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+  }
+
+  .con {
+    display: block; 
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .m1, .m2 {
+    width: 100%; 
+    padding: 30px; 
+    box-sizing: border-box;
+    
+  }
+
+  .pic1 img {
+    width: 70%; 
+    height: auto; 
+    border-radius: 10px; 
+  }
+
+  .explain {
+    font-size: 12px;
+  }
+  
+
+  
+
+}
+
+@media (max-width: 1240px) {
+  .menu {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10px; 
+  }
+
+  .logo img {
+    width: 120px; 
+    height: auto;
+  }
+
+  .Describe1 {
+    color: #fff;
+    font-size: 15px; 
+    white-space: nowrap; 
+    margin: 5px; 
+  }
+
+  .mmm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    padding: 40px;
+    width: 100vw; 
+  }
+
+  .mdes {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+    text-align: center;
+  }
+
+  .greet{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Faculty Glyphic";
+    align-items: center;
+  }
+
+  .con {
+    display: block; 
+    text-align: center;
+    margin-left: 1px;
+  }
+
+  .m1, .m2 {
+    width: 100%; 
+    padding: 40px; 
+    box-sizing: border-box;
+    
+  }
+
+  .pic1 img {
+    width: 90%; 
+    height: auto; 
+    border-radius: 10px; 
+  }
+
+  .explain {
+    font-size:18px;
+  }
+  
 }
